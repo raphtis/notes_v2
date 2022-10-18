@@ -63,11 +63,6 @@ const deleteGoal = asyncHandler(async (req, res) => {
 })
 
 
-// -desc GET goals
-// -route GET /api/goals
-// -access Private
-
-
 module.exports = {
   getGoals,
   createGoal,
