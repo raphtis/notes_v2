@@ -9,6 +9,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
+  background-color: #e6e6e6;
 }
 
 a {
@@ -24,6 +25,11 @@ li {
   line-height: 2.2;
 }
 
+h1 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
 .container {
   width: 100%;
   max-width: 960px;
@@ -37,7 +43,7 @@ li {
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-  border-bottom: 1px solid #e6e6e6;
+  border-bottom: 1px solid #46494C;
   margin-bottom: 60px;
 }
 
@@ -58,4 +64,53 @@ li {
 
 .header ul li a svg {
   margin-right: 5px;
+}
+
+
+.form {
+  box-shadow: 13px 13px 4px -3px rgba(0,0,0,0.1);
+  background-color: #ECEBEA;
+  border-radius: 3rem;
+  height: 30rem;
+  width: 30rem;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.form h1 {
+  padding-top: 2rem;
+  font-size: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media ( max-width: 600px) {
+  .form {
+    width: 90%;
+  }
+
+  .heading h1 {
+    font-size: 2rem;
+  }
+
+  .heading p {
+    font-size: 1.5rem;
+  }
 }
