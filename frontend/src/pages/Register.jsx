@@ -57,12 +57,9 @@ function Register() {
   }
 
   return <>
-    <section className="heading">
-
-    </section>
 
     <section className="form">
-      <div>
+      <div className='heading'>
         <h1>
           <FaUser /> Register
         </h1>
