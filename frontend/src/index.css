@@ -66,6 +66,19 @@ h1 {
   margin-right: 5px;
 }
 
+.goals {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.goal {
+  background-color: #ECEBEA;
+  margin: 10px 0;
+  padding: 20px 0 10px;
+  position: relative;
+}
+
 
 .form {
   box-shadow: 13px 13px 4px -3px rgba(0,0,0,0.1);
@@ -77,11 +90,50 @@ h1 {
   margin-top: 3rem;
 }
 
+.form, .content {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-top: 5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 1rem;
+  font-family: inherit;
+}
+
+.form-group label {
+  text-align: left;
+  display: block;
+  margin: 0 0 5px 3px;
+}
+
 .form h1 {
   padding-top: 2rem;
   font-size: 2rem;
 }
 
+.btn {
+  margin-top: 1rem; 
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 1rem;
+  background: #000;
+  color: #e6e6e6;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  align-items: center;
+  justify-content: center;
+}
 
 
 
