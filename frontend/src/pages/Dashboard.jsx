@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import GoalItem from '../components/GoaItem'
+import GoalForm from '../components/GoalForm'
 import { getGoals, reset } from '../features/goals/goalSlice'
 
 import Spinner from '../components/Spinner'
@@ -32,6 +33,8 @@ function Dashboard() {
       <h1>Welcome { user && user.username} </h1>
       <p>Goal Dashboard</p>
     </section>
+
+    <GoalForm />
 
     <section className="content">
       {goals.length > 0 ? (

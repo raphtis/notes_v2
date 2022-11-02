@@ -9,7 +9,8 @@
 body {
   font-family: 'Roboto', sans-serif;
   height: 100vh;
-  background-color: #e6e6e6;
+  background-color: #f6eedf;
+  color: #26363C;
 }
 
 a {
@@ -72,22 +73,36 @@ h1 {
   gap: 10px;
 }
 
+.goals h2 {
+  margin: 10px;
+  text-align: left;
+}
+
+.goals p {
+  text-align: left;
+  margin-left: 1rem;
+}
+
 .goal {
-  background-color: #ECEBEA;
   margin: 10px 0;
   padding: 20px 0 10px;
   position: relative;
+  box-shadow: 15px 15px 10px -1px rgba(0,0,0,0.1);
+  background-color: #f6cb5f;
+  border-radius: 1rem;
+  color: #26363C;
 }
 
 
 .form {
-  box-shadow: 13px 13px 4px -3px rgba(0,0,0,0.1);
-  background-color: #ECEBEA;
+  box-shadow: 15px 15px 10px -1px rgba(0,0,0,0.1);
+  background-color: #f6cb5f;
   border-radius: 3rem;
   height: 30rem;
   width: 30rem;
   margin: 0 auto;
   margin-top: 3rem;
+  color: #26363C;
 }
 
 .form, .content {
@@ -125,8 +140,8 @@ h1 {
   padding: 10px 20px;
   border: 1px solid #000;
   border-radius: 1rem;
-  background: #000;
-  color: #e6e6e6;
+  background: #26363C;
+  color: #F3ECE0;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
@@ -141,8 +156,27 @@ h1 {
 
 
 
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
-
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
 
 @keyframes spin {
   0% {
