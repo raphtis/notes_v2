@@ -63,7 +63,7 @@ function Login() {
         <h3>Login to set goals</h3>
       </div>
 
-      <form onSubmit={onSubmit}>
+      <form onSubmit={onSubmit} className="login-form">
         <div className="form-group">
           <input 
             type="email" 

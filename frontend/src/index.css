@@ -26,7 +26,7 @@ li {
   line-height: 2.2;
 }
 
-h1 {
+h1, h3 {
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -93,21 +93,19 @@ h1 {
   color: #26363C;
 }
 
-
 .form {
   box-shadow: 15px 15px 10px -1px rgba(0,0,0,0.1);
   background-color: #f6cb5f;
   border-radius: 3rem;
   height: 30rem;
-  width: 30rem;
-  margin: 0 auto;
-  margin-top: 3rem;
   color: #26363C;
 }
 
+
 .form, .content {
   width: 70%;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-group {
@@ -125,15 +123,14 @@ h1 {
 }
 
 .form-group label {
-  text-align: left;
   display: block;
-  margin: 0 0 5px 3px;
 }
 
 .form h1 {
   padding-top: 2rem;
   font-size: 2rem;
 }
+
 
 .btn {
   margin-top: 1rem; 
@@ -145,15 +142,11 @@ h1 {
   font-size: 16px;
   cursor: pointer;
   text-align: center;
-  appearance: button;
-  align-items: center;
-  justify-content: center;
 }
 
-
-
-
-
+.btn:hover {
+  opacity: 90%;
+}
 
 
 .loadingSpinnerContainer {
@@ -189,7 +182,7 @@ h1 {
 
 @media ( max-width: 600px) {
   .form {
-    width: 90%;
+    width: 70%;
   }
 
   .heading h1 {
@@ -199,4 +192,13 @@ h1 {
   .heading p {
     font-size: 1.5rem;
   }
+
+  .goals h2 {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 12px;
+  }
+  
 }
