@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { FaSignInAlt } from 'react-icons/fa';
 import { useSelector, useDispatch } from 'react-redux' 
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify'
 import { login, reset } from '../features/auth/authSlice'
 import Spinner from '../components/Spinner'
@@ -87,6 +87,7 @@ function Login() {
             />
         </div>
         <div className="form-group">
+          <Link to='/register' className='form-link'>No account? Register here</Link>
           <button className="btn btn-block" type='submit'>
             Submit
           </button>

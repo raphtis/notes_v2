@@ -7,7 +7,6 @@ const User = require('../models/userModel')
 // -access Private
 const getGoals = asyncHandler(async (req,res) => {
   const goals = await Goal.find({ username: req.user.id })
-
   res.status(200).json(goals)
 })
 
@@ -49,7 +48,7 @@ const updateGoal = asyncHandler(async (req, res) => {
   }
 
   // DID LOGGED USER CREATE POST
-  if(global.user.toString() !== req.user.id){
+  if(goal.username.toString() !== req.user.id){
     res.status(401)
     throw new Error('User not authorized.')
   }
@@ -77,7 +76,7 @@ const deleteGoal = asyncHandler(async (req, res) => {
   }
 
   // DID LOGGED USER CREATE POST
-  if(global.user.toString() !== req.user.id){
+  if(goal.username.toString() !== req.user.id){
     res.status(401)
     throw new Error('User not authorized.')
   }

@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { register, reset } from '../features/auth/authSlice'
 import { FaUser } from 'react-icons/fa'
@@ -112,6 +112,7 @@ function Register() {
             />
         </div>
         <div className="form-group">
+          <Link to='/login' className='form-link'>Already registered? Login here</Link>
           <button className="btn btn-block" type='submit'>
             Submit
           </button>

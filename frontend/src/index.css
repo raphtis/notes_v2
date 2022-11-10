@@ -91,6 +91,19 @@ h1, h3 {
   background-color: #f6cb5f;
   border-radius: 1rem;
   color: #26363C;
+  position: relative;
+}
+
+.close {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 1.25rem;
+}
+
+.goal-date {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .form {
@@ -101,11 +114,16 @@ h1, h3 {
   color: #26363C;
 }
 
-
 .form, .content {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
+  height: auto;
+}
+
+.form-link {
+  margin-right: 10px;
+  font-size: .75rem;
 }
 
 .form-group {
@@ -134,6 +152,7 @@ h1, h3 {
 
 .btn {
   margin-top: 1rem; 
+  margin-bottom: 1rem;
   padding: 10px 20px;
   border: 1px solid #000;
   border-radius: 1rem;
