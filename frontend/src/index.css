@@ -126,6 +126,10 @@ h1, h3 {
   font-size: .75rem;
 }
 
+.reg-link {
+  padding-bottom: 1rem; 
+}
+
 .form-group {
   margin-top: 5px;
 }

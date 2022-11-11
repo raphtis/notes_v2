@@ -87,10 +87,12 @@ function Login() {
             />
         </div>
         <div className="form-group">
-          <Link to='/register' className='form-link'>No account? Register here</Link>
           <button className="btn btn-block" type='submit'>
             Submit
           </button>
+        </div>
+        <div className="reg-link">
+          <Link to='/register' className='form-link'>No account? Register here</Link>
         </div>
       </form>
     </section>

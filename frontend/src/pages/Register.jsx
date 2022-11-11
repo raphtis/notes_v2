@@ -112,10 +112,12 @@ function Register() {
             />
         </div>
         <div className="form-group">
-          <Link to='/login' className='form-link'>Already registered? Login here</Link>
           <button className="btn btn-block" type='submit'>
             Submit
           </button>
+        </div>
+        <div className='reg-link'>
+        <Link to='/login' className='form-link'>Already registered? Login here</Link>
         </div>
       </form>
     </section>
