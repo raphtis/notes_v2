@@ -19,6 +19,7 @@ function GoalForm() {
     dispatch(createGoal({ text, title }))
     setTitle('')
     setText('')
+    toast.success('Goal created!')
     }
   }
 

@@ -31,7 +31,7 @@ function Dashboard() {
   return <>
     <section className="heading">
       <h1>Welcome { user && user.username} </h1>
-      <p>Goal Dashboard</p>
+      <h4>Goal Dashboard</h4>
     </section>
 
     <GoalForm />

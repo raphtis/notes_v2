@@ -94,16 +94,27 @@ h1, h3 {
   position: relative;
 }
 
-.close {
+.close,
+.edit {
   cursor: pointer;
   border: none;
   background: none;
   font-size: 1.25rem;
+  margin-left: 1rem;
+}
+
+.edit {
+  margin-left: auto;
+}
+
+.close {
+  margin-right: auto;
 }
 
 .goal-date {
   display: flex;
-  justify-content: space-evenly;
+  align-items: inherit;
+  margin-left: .75rem;
 }
 
 .form {
@@ -114,8 +125,8 @@ h1, h3 {
   color: #26363C;
 }
 
-.form, .content {
-  width: 70%;
+.content {
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   height: auto;
@@ -155,6 +166,7 @@ h1, h3 {
 
 
 .btn {
+  width: 80%;
   margin-top: 1rem; 
   margin-bottom: 1rem;
   padding: 10px 20px;
@@ -167,8 +179,13 @@ h1, h3 {
   text-align: center;
 }
 
+.logout-btn {
+  width: auto !important;
+}
+
 .btn:hover {
   opacity: 90%;
+  animation-duration: 500;
 }
 
 
@@ -203,17 +220,24 @@ h1, h3 {
   }
 }
 
-@media ( max-width: 600px) {
-  .form {
-    width: 70%;
-  }
 
+@media ( max-width: 800px) {
+  .goal-date {
+    margin-right: .75rem;
+  }
+}
+
+@media ( max-width: 600px) {
   .heading h1 {
     font-size: 2rem;
   }
 
   .heading p {
     font-size: 1.5rem;
+  }
+
+  .goals {
+    margin-right: 1rem;
   }
 
   .goals h2 {
@@ -224,4 +248,16 @@ h1, h3 {
     font-size: 12px;
   }
   
+}
+
+@media ( max-width: 400px) {
+  .goals {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: 360px;
+  }
+
+  .goal-date {
+    margin-right: 1rem;
+  }
 }
