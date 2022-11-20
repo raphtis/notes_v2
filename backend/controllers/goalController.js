@@ -10,6 +10,27 @@ const getGoals = asyncHandler(async (req,res) => {
   res.status(200).json(goals)
 })
 
+// -desc GET goals
+// -route GET /api/goals
+// -access Private
+const getGoal = asyncHandler(async (req,res) => {
+  const goal = await Goal.findById(req.params.id)
+
+  // DOES GOAL EXIST
+  if(!goal){
+    res.status(400)
+    throw new Error('Goal could not be found.')
+  }
+
+  // DID USER CREATE GOAL
+  if(!req.user){
+    res.status(401)
+    throw new Error('User not found.')
+  }
+
+  res.status(200).json(goal)
+})
+
 
 // -desc CREATE goal
 // -route POST /api/goals
@@ -89,6 +110,7 @@ const deleteGoal = asyncHandler(async (req, res) => {
 
 module.exports = {
   getGoals,
+  getGoal,
   createGoal,
   updateGoal,
   deleteGoal
