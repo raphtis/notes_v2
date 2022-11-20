@@ -26,9 +26,9 @@ li {
   line-height: 2.2;
 }
 
-h1, h3 {
+h1, h3, h4 {
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
 }
 
 .container {
@@ -156,6 +156,7 @@ h1, h3 {
   border: 1px solid #e6e6e6;
   border-radius: 1rem;
   font-family: inherit;
+  font-size: 1rem;
 }
 
 .form-group label {
@@ -257,6 +258,7 @@ h1, h3 {
   .goals {
     display: flex;
     flex-wrap: wrap-reverse;
+    margin-left: 2.5rem;
   }
 
   .goal-date {
