@@ -3,7 +3,8 @@ import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import GoalItem from '../components/GoaItem'
 import GoalForm from '../components/GoalForm'
-import { getGoals, reset } from '../features/goals/goalSlice'
+import { getGoals } from '../features/goals/goalSlice'
+
 
 import Spinner from '../components/Spinner'
 

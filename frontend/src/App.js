@@ -5,7 +5,7 @@ import Header from './components/Header'
 import Dashboard from './pages/Dashboard'
 import Login from './pages/Login'
 import Register from './pages/Register'
-import GoalDetails from './components/GoalDetails'
+import GoalDetails from './pages/GoalDetails'
 
 function App() {
   return (
